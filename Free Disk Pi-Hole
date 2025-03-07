@@ -1,0 +1,6 @@
+pihole flush
+sudo systemctl stop pihole-FTL
+sudo rm /etc/pihole/pihole-FTL.db
+sudo systemctl start pihole-FTL
+sudo systemctl restart pihole-FTL
+sudo systemctl restart unbound
