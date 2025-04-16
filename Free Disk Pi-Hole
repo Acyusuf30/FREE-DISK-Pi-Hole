@@ -1,6 +1,17 @@
+# Use Sudo
 pihole flush
 sudo systemctl stop pihole-FTL
 sudo rm /etc/pihole/pihole-FTL.db
 sudo systemctl start pihole-FTL
 sudo systemctl restart pihole-FTL
 sudo systemctl restart unbound
+sudo reboot
+
+# TANPA SUDO
+pihole flush
+systemctl stop pihole-FTL
+rm /etc/pihole/pihole-FTL.db
+systemctl start pihole-FTL
+systemctl restart pihole-FTL
+systemctl restart unbound
+reboot
